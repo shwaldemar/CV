@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>My Contact Details</title>
+  </head>
+
+  <body>
+    <h1>My Contact Details</h1>
+    <p>Mobile: My Number</p>
+    <p>Email: myemail@gmail.com</p>
+
+    <hr />
+
+    <form
+      method="post"
+      action="mailto:shwaldemar@gmail.com"
+      enctype="text/plain"
+    >
+      <label for="name">Your Name:</label>
+      <input id="name" name="submitted-name" autocomplete="name" value="name" />
+      <br />
+      <label for="email">Your Email:</label>
+      <input
+        id="email"
+        name="submitted-email"
+        autocomplete="email"
+        value="email"
+      />
+      <br />
+      <label for="message">Your Message:</label>
+      <br />
+      <textarea
+        id="message"
+        name="submitted-message"
+        autocomplete="message"
+        placeholder="Your message here"
+        rows="8"
+        columns="30"
+        value="message"
+      ></textarea>
+
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
